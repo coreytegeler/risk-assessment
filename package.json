@@ -1,0 +1,25 @@
+{
+  "name": "risk-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreytegeler/risk-assessment.git"
+  },
+  "author": "Corey Tegeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreytegeler/risk-assessment/issues"
+  },
+  "homepage": "https://github.com/coreytegeler/risk-assessment#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-serve": "^0.1.6"
+  }
+}
