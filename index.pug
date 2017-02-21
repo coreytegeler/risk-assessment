@@ -154,16 +154,19 @@ html(xmlns='http://www.w3.org/1999/xhtml')
             .col-sm-11.col-centered
               .col-sm-4
                 img.text-center(src='imgs/password.svg')
-                h3 Always use strong passwords.
-                | A strong password is something that’s hard to guess by someone who knows you and by a computer. You can use a password manager to both generate and store hard-to-remember passwords for you. You can also test password strength--not your real passwords, but similar kinds of passwords--on password testing sites like this one.
+                p
+                  strong Always use strong passwords.
+                  |  A strong password is something that’s hard to guess by someone who knows you and by a computer. You can use a password manager to both generate and store hard-to-remember passwords for you. You can also test password strength--not your real passwords, but similar kinds of passwords--on password testing sites like this one.
               .col-sm-4
                 img.text-center(src='imgs/secure.svg')
-                h3 Use sites that are secure (e.g., use HTTPS) for personal transactions.
-                |  Websites that are encrypted prevent anyone else but you--the sender making the request to visit a particular website--and the website itself from seeing the data traveling between your computer and the website. Many people come to the library because it is the only place they are able to conduct all sorts of very personal business, such as applying to a job, renewing unemployment insurance, and banking online. Any time you have to submit data you care about and don’t want anyone else but the recipient to see, make sure you see the HTTPS or padlock icon in the browser’s address bar.
+                p
+                  strong Use sites that are secure (e.g., use HTTPS) for personal transactions.
+                  |  Websites that are encrypted prevent anyone else but you--the sender making the request to visit a particular website--and the website itself from seeing the data traveling between your computer and the website. Many people come to the library because it is the only place they are able to conduct all sorts of very personal business, such as applying to a job, renewing unemployment insurance, and banking online. Any time you have to submit data you care about and don’t want anyone else but the recipient to see, make sure you see the HTTPS or padlock icon in the browser’s address bar.
               .col-sm-4
                 img.text-center(src='imgs/logout.svg')
-                h3 Log out of a library terminal before walking away.
-                | When you are still logged into a terminal and walk away from your session, the person who sits down at the computer next may be able to see your web history, any sites that you are still logged into, and any documents you may have stored in the computer’s temporary drive.
+                p
+                  strong Log out of a library terminal before walking away.
+                  |  When you are still logged into a terminal and walk away from your session, the person who sits down at the computer next may be able to see your web history, any sites that you are still logged into, and any documents you may have stored in the computer’s temporary drive.
       .transmitting.section
         .container
           .row
@@ -171,53 +174,54 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               h1 When transmitting data online, what’s a good way to assess risk?
           .row
             .col-sm-9.col-centered
-              p
-                | As mentioned above, there are some digital privacy basic hygiene practices we recommend. How do we know what else we should be concerned about? How can we develop our own privacy practices as well as give advice to our library users?
+              p As mentioned above, there are some digital privacy basic hygiene practices we recommend. How do we know what else we should be concerned about? How can we develop our own privacy practices as well as give advice to our library users?
             //- end col-sm-6
           //- end row
         //- end container
       //- end section transmitting data
-      .users.section
+      .patrons.section
         .container
           .row
-            .col-sm-6
-              p
-                | Risks vary from person to person. For example, a Visa card data breach impacts anyone who uses these cards, but a person who does not have a credit card will not need to worry about this. Patrons that use social media need to consider their privacy settings on those sites, as well as the terms of service of those companies. Journalists may need to protect who they contact, in addition to the content of their conversations.
-            .col-sm-6
-              p When thinking about patrons, we assess risks based on a few elements:
-              #accordion.panel-group(role='tablist', aria-multiselectable='true')
-                .panel.panel-default
-                  #headingOne.panel-heading(role='tab')
-                    h4.panel-title
-                      a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-                        | Who you are.
-                  #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
-                    .panel-body
-                      | The patron population is diverse and faces different kinds of threats depending on who they are. What level of digital literacy do they possess? Are they a library terminal user or do they use their own computer device on the library’s wireless network?
-                .panel.panel-default
-                  #headingTwo.panel-heading(role='tab')
-                    h4.panel-title
-                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                        | What information are you most interested in keeping private.
-                  #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
-                    .panel-body
-                      | Patrons might be concerned about some things over others--for example, their financial transactions, but not their book borrowing history.
-                .panel.panel-default
-                  #headingThree.panel-heading(role='tab')
-                    h4.panel-title
-                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                        | Who is likely to try to access that without your consent.
-                  #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
-                    .panel-body
-                      | Not everyone feels their data is threatened by the same perpetrator. Some patrons might worry about a parent finding out about certain kinds of information, while others might be concerned about a snooping employer or marketing companies. Whether that person or entity is likely to be successful at accessing that information is another important consideration. Patrons might be concerned about their employer, but the likelihood that the company is actually surveilling its employees could be very low.
-                .panel.panel-default
-                  #headingThree.panel-heading(role='tab')
-                    h4.panel-title
-                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                        | Why do they want that information? What would be the consequence?
-                  #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
-                    .panel-body
-                      | What you are doing to protect yourself/What we recommend. Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
+            .col-sm-11.col-centered
+              .col-sm-6
+                p
+                  strong Risks vary from person to person.
+                  |  For example, a Visa card data breach impacts anyone who uses these cards, but a person who does not have a credit card will not need to worry about this. Patrons that use social media need to consider their privacy settings on those sites, as well as the terms of service of those companies. Journalists may need to protect who they contact, in addition to the content of their conversations.
+                p When thinking about patrons, we assess risks based on a few elements:
+              .col-sm-6
+                #accordion.panel-group(role='tablist', aria-multiselectable='true')
+                  .panel.panel-default
+                    #headingOne.panel-heading(role='tab')
+                      h4.panel-title
+                        a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                          | Who you are.
+                    #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                      .panel-body
+                        | The patron population is diverse and faces different kinds of threats depending on who they are. What level of digital literacy do they possess? Are they a library terminal user or do they use their own computer device on the library’s wireless network?
+                  .panel.panel-default
+                    #headingTwo.panel-heading(role='tab')
+                      h4.panel-title
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                          | What information are you most interested in keeping private.
+                    #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                      .panel-body
+                        | Patrons might be concerned about some things over others--for example, their financial transactions, but not their book borrowing history.
+                  .panel.panel-default
+                    #headingThree.panel-heading(role='tab')
+                      h4.panel-title
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                          | Who is likely to try to access that without your consent.
+                    #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                      .panel-body
+                        | Not everyone feels their data is threatened by the same perpetrator. Some patrons might worry about a parent finding out about certain kinds of information, while others might be concerned about a snooping employer or marketing companies. Whether that person or entity is likely to be successful at accessing that information is another important consideration. Patrons might be concerned about their employer, but the likelihood that the company is actually surveilling its employees could be very low.
+                  .panel.panel-default
+                    #headingThree.panel-heading(role='tab')
+                      h4.panel-title
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                          | Why do they want that information? What would be the consequence?
+                    #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                      .panel-body
+                        | What you are doing to protect yourself/What we recommend. Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
               //- end panel group
             //- end col-sm-8
           //- end row
