@@ -1,15 +1,16 @@
-body {
-  font-family: 'Roboto', sans-serif; }
+body, html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
 
 h1, h2, h3, h4, h5, h6, strong {
   font-family: 'Roboto Slab', serif; }
 
 p {
   text-align: left;
-  font-size: 1em; }
+  font-size: 16px; }
 
 ul li, ol li {
-  font-size: 1em; }
+  font-size: 16px; }
 
 h1 {
   font-size: 6em;
@@ -127,7 +128,8 @@ h3 {
   .panel .panel-body {
     border: 0 !important;
     text-align: left;
-    color: #222; }
+    color: #222;
+    font-size: 1em; }
 
 /*  bhoechie tab */
 .fp-controlArrow.fp-next {
@@ -199,9 +201,14 @@ h3 {
 .bhoechie-tab-content {
   padding-top: 1em;
   color: #222;
-  text-align: left; }
-  .bhoechie-tab-content ol {
+  text-align: left;
+  font-size: 1em; }
+  .bhoechie-tab-content p {
+    font-size: 1em; }
+  .bhoechie-tab-content ol, .bhoechie-tab-content ul {
     padding-left: 1.3em; }
+    .bhoechie-tab-content ol li, .bhoechie-tab-content ul li {
+      font-size: 1em; }
   .bhoechie-tab-content:not(.active) {
     display: none; }
 
