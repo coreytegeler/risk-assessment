@@ -4,7 +4,6 @@ body {
 
 h1, h2, h3, h4, h5, h6, strong {
   font-family: 'Roboto Slab', serif;
-  font-weight: normal;
 }
 
 p {
@@ -128,6 +127,11 @@ h3 {
 	    border-radius: 4px;
 		}
 	}
+	&.conclusion {
+		background-image: url(../imgs/pattern.svg);
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 .col-centered{
@@ -148,6 +152,7 @@ h3 {
 		border: 0 !important;
 		background-color: #fff;
 		user-select: none;
+		padding: 0 !important;
 		&:hover {
 	    cursor: pointer;
 	  }
@@ -156,6 +161,7 @@ h3 {
 			width: 100%;
 			font-weight: 400;
 		  color: #222;
+		  padding: 10px 15px;
 		}
 	}
 	.panel-body {
@@ -549,7 +555,7 @@ h3 {
 }
 
 #fp-nav ul li .fp-tooltip {
-  color: #ccc;
+  color: #000;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   text-transform: uppercase;

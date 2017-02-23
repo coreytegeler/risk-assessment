@@ -145,9 +145,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
       .hygiene.section
         .container
           .row
-            .col-centered
-              h1 What is digital hygiene?
-            .col-sm-9.col-centered
+            .col-sm-11.col-centered
+              h2.text-center What is digital hygiene?
+            .col-sm-4.col-centered
               p When we talk about being safe and secure online and protecting data you care about, we’re referring to digital hygiene. Though we review several steps in our curriculum [link to the pdfs page], here we recommend three basic steps for anyone using a library terminal:
       .recommend.section
         .container
@@ -172,7 +172,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
         .container
           .row
             .col-sm-12
-              h1 When transmitting data online, what’s a good way to assess risk?
+              h2.text-center When transmitting data online, what’s a good way to assess risk?
           .row
             .col-sm-9.col-centered
               p As mentioned above, there are some digital privacy basic hygiene practices we recommend. How do we know what else we should be concerned about? How can we develop our own privacy practices as well as give advice to our library users?
@@ -216,11 +216,11 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                       .panel-body
                         | Not everyone feels their data is threatened by the same perpetrator. Some patrons might worry about a parent finding out about certain kinds of information, while others might be concerned about a snooping employer or marketing companies. Whether that person or entity is likely to be successful at accessing that information is another important consideration. Patrons might be concerned about their employer, but the likelihood that the company is actually surveilling its employees could be very low.
                   .panel.panel-default
-                    #headingThree.panel-heading(role='tab')
+                    #headingFour.panel-heading(role='tab')
                       h4.panel-title
-                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
                           | Why do they want that information? What would be the consequence?
-                    #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                    #collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
                       .panel-body
                         | What you are doing to protect yourself/What we recommend. Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
               //- end panel group
@@ -446,7 +446,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                       li Make social media settings private
                       li Use an account not in my real name
 
-      .section  Conclusion goes here 
+      .section.conclusion
+        .col-sm-8.col-centered
+          h3.text-center Conclusion goes here 
     //- end fullpage
     #footer
   html
