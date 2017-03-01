@@ -128,7 +128,16 @@ h3 {
 	    border-radius: 4px;
 		}
 	}
-	&.conclusion {
+  &.meet {
+    .col-sm-3 {
+      img {
+        width: 50%;
+        display: table;
+        margin: auto;
+      }
+    }
+  }
+	&.recommend {
 		background-image: url(../imgs/pattern.svg);
 		background-size: cover;
 		background-position: center;
@@ -162,7 +171,14 @@ h3 {
 			width: 100%;
 			font-weight: 400;
 		  color: #222;
-		  padding: 10px 15px;
+		  padding: 1em 2em 1em 1em;
+      background-size: 1em;
+      background-repeat: no-repeat;
+      background-position: calc(100% - 1em) calc(100% - 1em);
+      background-image: url(../imgs/up.svg);
+      &.collapsed {
+        background-image: url(../imgs/down.svg);
+      }
 		}
 	}
 	.panel-body {
@@ -258,10 +274,6 @@ h3 {
   padding-top: 1em;
   color: #222;
   text-align: left;
-  font-size: 1em;
-  p {
-    font-size: 1em;
-  }
   ol, ul {
   	padding-left: 1.3em;
     li {

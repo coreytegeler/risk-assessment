@@ -1,9 +1,9 @@
 (function() {
   $(function() {
     $('#fullpage').fullpage({
-      anchors: ['intro', 'overview', 'quiz', 'hygiene', 'recommend', 'risk', 'patrons', 'luca', 'jo', 'sara', 'xav', 'conclusion'],
+      anchors: ['intro', 'quiz', 'patrons', 'meet', 'luca', 'jo', 'sara', 'xav', 'recommend'],
       navigation: true,
-      navigationTooltips: ['Intro', 'Overview', 'Quiz', 'Hygiene', 'Recommend', 'Risk', 'Patrons', 'Luca', 'Jo', 'Sara', 'Xav', 'Conclusion'],
+      navigationTooltips: ['Intro', 'Quiz', 'Patrons', 'Meet the Patrons', 'Luca', 'Jo', 'Sara', 'Xav', 'Recommend'],
       slidesNavigation: true,
       scrollingSpeed: 1000
     });

@@ -45,24 +45,24 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                 | Risk
                 br
                 | Assessment
-      .overview.section
-        .container
-          .row
-            .col-sm-6.col-centered
-              h2.text-center Overview
-              p The goal of our trainings is to learn the building blocks of privacy protection and digital security. Our teachings focus on activities patrons do every day at the library so that library staff can develop the capacity to:
-              ul
-                li 
-                  strong identify
-                  |  how patrons’ data travels to and through library networks;
-                li
-                  strong assess
-                  |  which privacy and security risks patrons are most likely to encounter at the library; and,
-                li
-                  strong respond
-                  |  with appropriate steps that help patrons protect themselves against unnecessary data collection or unwanted access and use of data they share online.
-              p
-                | By beginning with common patron experiences, the Data Privacy Project makes learning about privacy protections relevant to the everyday realities of libraries today.
+      //- .overview.section
+      //-   .container
+      //-     .row
+      //-       .col-sm-6.col-centered
+      //-         h2.text-center Overview
+      //-         p The goal of our trainings is to learn the building blocks of privacy protection and digital security. Our teachings focus on activities patrons do every day at the library so that library staff can develop the capacity to:
+      //-         ul
+      //-           li 
+      //-             strong identify
+      //-             |  how patrons’ data travels to and through library networks;
+      //-           li
+      //-             strong assess
+      //-             |  which privacy and security risks patrons are most likely to encounter at the library; and,
+      //-           li
+      //-             strong respond
+      //-             |  with appropriate steps that help patrons protect themselves against unnecessary data collection or unwanted access and use of data they share online.
+      //-         p
+      //-           | By beginning with common patron experiences, the Data Privacy Project makes learning about privacy protections relevant to the everyday realities of libraries today.
         //- end container
       //- end overview section
       .quiz.section
@@ -92,7 +92,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               a(data-toggle='collapse', href='#collapse2') Another patron
             #collapse2.collapse
               p
-                | Any of these people may try to obtain or guess your password without your consent. A strong password should be hard to guess by someone who knows you (so, it shouldn’t include easily known information like your name or address or pet’s name).nd, it should be hard to guess by computer programs that digital thieves might use (password should be as long as possible and include an assortment of capital letters, symbols and numbers).
+                | Any of the above people may try to obtain or guess your password without your consent. A strong password should be hard to guess by someone who knows you (so, it shouldn’t include easily known information like your name or address or pet’s name).nd, it should be hard to guess by computer programs that digital thieves might use (password should be as long as possible and include an assortment of capital letters, symbols and numbers).
         .slide(data-anchor='slide3')
           .col-sm-8.col-centered.specialbox
             h3 True or false: During a web browsing session in private or incognito mode, cookies cannot communicate information about your browsing behavior to third parties.
@@ -143,45 +143,22 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               p
                 strong False.
                 |  Using the same password across websites is generally not a good idea, because if one service is compromised or discovered, then all of your accounts are in jeopardy. Instead, if you use a unique password for each account, you minimize the damage if one site is hacked or leaks information.
-      .hygiene.section
-        .container
-          .row
-            .col-sm-6.col-centered
-              h2.text-center What is digital hygiene?
-              p When we talk about being safe and secure online and protecting data you care about, we’re referring to digital hygiene. Though we review several steps in our curriculum [link to the pdfs page], here we recommend three basic steps for anyone using a library terminal:
-      .recommend.section
-        .container
-          .row
-            .col-sm-11.col-centered
-              .col-sm-4
-                img.text-center(src='imgs/password.svg')
-                p
-                  strong Always use strong passwords.
-                  |  A strong password is something that’s hard to guess by someone who knows you and by a computer. You can use a password manager to both generate and store hard-to-remember passwords for you. You can also test password strength--not your real passwords, but similar kinds of passwords--on password testing sites like this one.
-              .col-sm-4
-                img.text-center(src='imgs/secure.svg')
-                p
-                  strong Use sites that are secure (e.g., use HTTPS) for personal transactions.
-                  |  Websites that are encrypted prevent anyone else but you--the sender making the request to visit a particular website--and the website itself from seeing the data traveling between your computer and the website. Many people come to the library because it is the only place they are able to conduct all sorts of very personal business, such as applying to a job, renewing unemployment insurance, and banking online. Any time you have to submit data you care about and don’t want anyone else but the recipient to see, make sure you see the HTTPS or padlock icon in the browser’s address bar.
-              .col-sm-4
-                img.text-center(src='imgs/logout.svg')
-                p
-                  strong Log out of a library terminal before walking away.
-                  |  When you are still logged into a terminal and walk away from your session, the person who sits down at the computer next may be able to see your web history, any sites that you are still logged into, and any documents you may have stored in the computer’s temporary drive.
-      .transmitting.section
-        .container
-          .row
-            .col-sm-6.col-centered
-              h2.text-center When transmitting data online, what’s a good way to assess risk?
-              p As mentioned above, there are some digital privacy basic hygiene practices we recommend. How do we know what else we should be concerned about? How can we develop our own privacy practices as well as give advice to our library users?
-            //- end col-sm-6
-          //- end row
-        //- end container
-      //- end section transmitting data
+      //- .hygiene.section
+      //-   .container
+      //-     .row
+      //-       .col-sm-6.col-centered
+      //-         h2.text-center What is digital hygiene?
+      //-         p When we talk about being safe and secure online and protecting data you care about, we’re referring to digital hygiene. Though we review several steps in our curriculum [link to the pdfs page], here we recommend three basic steps for anyone using a library terminal:
+      //- .transmitting.section
+      //-   .container
+      //-     .row
+      //-       .col-sm-6.col-centered
+      //-         h2.text-center What is a risk assessment?
+      //-         p As mentioned above, there are some digital privacy basic hygiene practices we recommend. How do we know what else we should be concerned about? How can we develop our own privacy practices as well as give advice to our library users?
       .patrons.section
         .container
           .row
-            .col-sm-11.col-centered
+            .col-sm-12.col-centered
               .col-sm-6
                 p
                   strong Risks vary from person to person.
@@ -217,15 +194,45 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                     #headingFour.panel-heading(role='tab')
                       h4.panel-title
                         a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
-                          | Why do they want that information? What would be the consequence?
+                          | What are you already doing to protect yourself?
                     #collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
                       .panel-body
+                        | Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
+                  .panel.panel-default
+                    #headingFive.panel-heading(role='tab')
+                      h4.panel-title
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
+                          | What are the consequences, and how impactful would the consequences be for you?
+                    #collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
+                      .panel-body
                         | What you are doing to protect yourself/What we recommend. Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
-              //- end panel group
-            //- end col-sm-8
-          //- end row
-        //- end container
-      //- end section transmitting data
+      .meet.section
+        .container
+          .row
+            .col-sm-10.col-centered
+              h2.text-center Let's meet our patrons.
+          .row
+            .col-sm-12.col-centered
+              .col-sm-3
+                img(src='imgs/luca.svg')
+                p 
+                  strong Luca
+                  | , a single parent with limited digital literacy skills and limited English skills, relies on the library for access to computers and the Internet.
+              .col-sm-3
+                img(src='imgs/jo.svg')
+                p 
+                  strong Jo
+                  | , an artist who regularly comes to the library to do research about strange and sensitive subject matter on both library computers and her own laptop.
+              .col-sm-3
+                img(src='imgs/sara.svg')
+                p 
+                  strong Sara 
+                  | is leaving a difficult family situation and uses the library computers and wifi to access social media, look for housing, and read the news.
+              .col-sm-3
+                img(src='imgs/xav.svg')
+                p
+                  strong Xav
+                  | , an outspoken, politically minded twenty-something, uses the library computers to search for jobs
       .luca.patron.section
         .container
           .row
@@ -444,9 +451,25 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                       li Make social media settings private
                       li Use an account not in my real name
 
-      .section.conclusion
-        .col-sm-8.col-centered
-          h3.text-center Conclusion goes here 
+      .recommend.section
+        .container
+          .row
+            .col-sm-12.col-centered
+              .col-sm-4
+                //- img.text-center(src='imgs/password.svg')
+                p
+                  strong Always use strong passwords.
+                  |  A strong password is something that’s hard to guess by someone who knows you and by a computer. You can use a password manager to both generate and store hard-to-remember passwords for you. You can also test password strength--not your real passwords, but similar kinds of passwords--on password testing sites like this one.
+              .col-sm-4
+                //- img.text-center(src='imgs/secure.svg')
+                p
+                  strong Use sites that are secure (e.g., use HTTPS) for personal transactions.
+                  |  Websites that are encrypted prevent anyone else but you--the sender making the request to visit a particular website--and the website itself from seeing the data traveling between your computer and the website. Many people come to the library because it is the only place they are able to conduct all sorts of very personal business, such as applying to a job, renewing unemployment insurance, and banking online. Any time you have to submit data you care about and don’t want anyone else but the recipient to see, make sure you see the HTTPS or padlock icon in the browser’s address bar.
+              .col-sm-4
+                //- img.text-center(src='imgs/logout.svg')
+                p
+                  strong Log out of a library terminal before walking away.
+                  |  When you are still logged into a terminal and walk away from your session, the person who sits down at the computer next may be able to see your web history, any sites that you are still logged into, and any documents you may have stored in the computer’s temporary drive.
     //- end fullpage
     #footer
   html

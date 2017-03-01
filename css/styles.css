@@ -96,7 +96,11 @@ h3 {
   display: inline-table;
   white-space: nowrap;
   border-radius: 4px; }
-.section.conclusion {
+.section.meet .col-sm-3 img {
+  width: 50%;
+  display: table;
+  margin: auto; }
+.section.recommend {
   background-image: url(../imgs/pattern.svg);
   background-size: cover;
   background-position: center; }
@@ -124,7 +128,13 @@ h3 {
       width: 100%;
       font-weight: 400;
       color: #222;
-      padding: 10px 15px; }
+      padding: 1em 2em 1em 1em;
+      background-size: 1em;
+      background-repeat: no-repeat;
+      background-position: calc(100% - 1em) calc(100% - 1em);
+      background-image: url(../imgs/up.svg); }
+      .panel .panel-heading .panel-title a.collapsed {
+        background-image: url(../imgs/down.svg); }
   .panel .panel-body {
     border: 0 !important;
     text-align: left;
@@ -201,10 +211,7 @@ h3 {
 .bhoechie-tab-content {
   padding-top: 1em;
   color: #222;
-  text-align: left;
-  font-size: 1em; }
-  .bhoechie-tab-content p {
-    font-size: 1em; }
+  text-align: left; }
   .bhoechie-tab-content ol, .bhoechie-tab-content ul {
     padding-left: 1.3em; }
     .bhoechie-tab-content ol li, .bhoechie-tab-content ul li {
