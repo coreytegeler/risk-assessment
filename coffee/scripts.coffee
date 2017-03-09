@@ -1,8 +1,8 @@
 $ ->
   $('#fullpage').fullpage
-    anchors: ['intro', 'quiz', 'patrons', 'meet', 'luca', 'jo', 'sara', 'xav', 'recommend'],
+    anchors: ['intro', 'quiz', 'what', 'patrons', 'meet', 'luca', 'jo', 'sara', 'xav', 'recommend'],
     navigation: true,
-    navigationTooltips: ['Intro', 'Quiz', 'Patrons', 'Meet the Patrons', 'Luca', 'Jo', 'Sara', 'Xav', 'Recommend'],
+    navigationTooltips: ['Intro', 'Quiz', 'What is it?', 'Patrons', 'Meet the Patrons', 'Luca', 'Jo', 'Sara', 'Xav', 'Recommend'],
     slidesNavigation: true,
     scrollingSpeed: 1000
 
