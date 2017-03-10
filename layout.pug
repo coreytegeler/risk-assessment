@@ -1,0 +1,40 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    -var today = new Date();
+    -var date = today.getDate()+''+today.getMonth()+1+''+today.getYear()+''+Date.now();
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Risk Assessment &#8211; Data Privacy Project
+    meta(name='Resource-type', content='Document')
+    //- Latest compiled and minified Bootstrap and fonts CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab', rel='stylesheet')
+    //- fullPage CSS
+    link(rel='stylesheet', type='text/css', href='http://www.dataprivacyproject.org/wp-content/themes/dazzling-child/css/jquery.fullPage.css')
+    //- Custom CSS
+    link(rel='stylesheet', href='../css/styles.css?version='+date)
+    //- Latest compiled and minified jQuery
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js')
+    //- fullPage & Bootstrap JS
+    script(type='text/javascript', src='http://www.dataprivacyproject.org/wp-content/themes/dazzling-child/js/jquery.fullPage.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    //- Custom JS
+    script(src='../js/scripts.js?version='+date)
+  body
+    #header
+      img(src='http://www.dataprivacyproject.org/wp-content/themes/dazzling-child/imgs/data_priv_proj.png', style='float:left; width:270px;')
+      ul.nav.nav-pills.text-right(style='float:right; padding-right:50px;')
+        li(role='presentation')
+          a(href='library.html') History
+        li.active(role='presentation')
+          a(href='#') Mapping Data Flows
+        li(role='presentation')
+          a(href='#') Knowledge Share
+        li(role='presentation')
+          a(href='#') Curriculum
+        li(role='presentation')
+          a(href='#') Our Team
+    block body
+    #footer

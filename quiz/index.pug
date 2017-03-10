@@ -1,0 +1,108 @@
+extends ../layout.pug
+block body
+  #quiz.fullpage
+    .section.intro
+      .container
+        .row
+          .col-sm-10.col-centered
+            h1 How much do you and your patrons know about libraries and privacy?
+            h2.text-center Let’s take a quiz.
+    .section.question.q1
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3
+              strong True or false: 
+              | When you use a library terminal, the library knows what sites you have visited.
+            p
+              a.multiplechoice(data-toggle='collapse', href='#collapse1') True
+              a(data-toggle='collapse', href='#collapse1') False
+            #collapse1.collapse
+              p
+                strong True.
+                |  The library network can see which sites library terminals or computer devices on the library network are communicating with. If you are using HTTP, library network operators can see the information you send and receive; if you are using HTTPS, network operators can only see which sites you visit and not the content. Library policies will vary from institution to institution. Check with your library to see how long it retains this data.
+    .section.question.q2
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3 Who is most likely to steal your password and access your accounts?
+            p
+              a(data-toggle='collapse', href='#collapse2') Parents
+              a(data-toggle='collapse', href='#collapse2') Spouse
+              a(data-toggle='collapse', href='#collapse2') Sibling
+              a(data-toggle='collapse', href='#collapse2') Classmate
+              a(data-toggle='collapse', href='#collapse2') Thief
+              a(data-toggle='collapse', href='#collapse2') Another patron
+            #collapse2.collapse
+              p
+                | Any of the above people may try to obtain or guess your password without your consent. A strong password should be hard to guess by someone who knows you (so, it shouldn’t include easily known information like your name or address or pet’s name).nd, it should be hard to guess by computer programs that digital thieves might use (password should be as long as possible and include an assortment of capital letters, symbols and numbers).
+    .section.question.q3
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3
+              strong True or false: 
+              | During a web browsing session in private or incognito mode, cookies cannot communicate information about your browsing behavior to third parties.
+            p
+              a(data-toggle='collapse', href='#collapse3') True
+              a(data-toggle='collapse', href='#collapse3') False
+            #collapse3.collapse
+              p
+                strong False.
+                |  Although your dad or wife might not be able to see what sites you’ve visited on you computer, your Internet provider, websites you’re visiting, and third parties embedded in those sites can see who you are. The requests your computer or computer device makes to a website will include your computer’s Internet Protocol (IP) address. Cookies on websites include cookies used by the website itself and third party cookies like those used by ad networks. These cookies are invisible to the common user even though they will also communicate with your computer and know you by your IP address. Because they know your IP address, they can track your behavior across any site where they can send cookies. The only way to hide your IP address from the third parties and websites is by using a virtual private network (VPN), which will cloak any requests, or by using the Tor browser. Note that when using a VPN, that company or VPN provider will know what sites you are visiting. All in all, private browsing simply hides your usage history from other users on your computer.
+    .section.question.q4
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3
+              strong True or false: 
+              | Using a public library’s open wi-fi means your online behavior is anonymous.
+            p
+              a(data-toggle='collapse', href='#collapse4') True
+              a(data-toggle='collapse', href='#collapse4') False
+            #collapse4.collapse
+              p
+                strong False.
+                |  Websites that can see your computer’s IP address, websites that you log on to with a username and password, and apps that you have turned on your phone will be able to identify you. Additionally, the Internet Service Provider (ISP) that supplies connectivity to the library will be able to identify the IP address affiliated with unsecured HTTP requests made by a library computer terminal or your computer device on the library network. ISPs will have their own data retention policies. Library network operators will be able to identify who logs on to the library network using the computer reservation system, though check with your library’s computer usage policies to find out how long your library retains that information.
+    .section.question.q5
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3
+              strong True or false: 
+              | When a website has a privacy policy, it means the site will not share my information with other websites and companies without my permission.
+            p
+              a(data-toggle='collapse', href='#collapse5') True
+              a(data-toggle='collapse', href='#collapse5') False
+            #collapse5.collapse
+              p
+                strong False.
+                |  A privacy policy is a company’s way of communicating to the consumer what kinds of data it collects and the categories or types of third parties with whom the company shares data. A privacy policy will also provide information about its online tracking practices, such as the use of cookies. In other words, if you use a site or app, you’re not setting your privacy terms, you’re agreeing to play by that company’s rules.
+    .section.question.q6
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3
+              strong True or false: 
+              | Most websites are encrypted.
+            p
+              a(data-toggle='collapse', href='#collapse6') True
+              a(data-toggle='collapse', href='#collapse6') False
+            #collapse6.collapse
+              p
+                strong False.
+                |  A website is encrypted when it has HTTPS in the address bar. Using HTTPS, the content of the website request is encrypted from the server to you. This means that when checking your email using HTTPS, the content of the email invisible only to the email server and to you. However, even when using HTTPS, the webpage’s IP address itself is not encrypted, and so what website you are visiting could be discovered (for example, https://www.signsiampregnant.info). The percentage of HTTPS traffic relative to all web traffic is less than 50 percent, though the precise amount varies from report to report, and the trend is generally increasing. Most email providers, banks, and checkout pages on shopping websites use HTTPS.
+    .section.question.q7
+      .container
+        .row
+          .col-sm-8.col-centered.specialbox
+            h3
+              strong True or false: 
+              | It is safe to use the same password for multiple user accounts, as long as it contains a few different letters, numbers, or symbols.
+            p
+              a(data-toggle='collapse', href='#collapse7') True
+              a(data-toggle='collapse', href='#collapse7') False
+            #collapse7.collapse
+              p
+                strong False.
+                |  Using the same password across websites is generally not a good idea, because if one service is compromised or discovered, then all of your accounts are in jeopardy. Instead, if you use a unique password for each account, you minimize the damage if one site is hacked or leaks information.

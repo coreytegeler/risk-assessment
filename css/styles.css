@@ -22,7 +22,7 @@ h2 {
 h3 {
   font-size: 2em; }
 
-#fullpage {
+.fullpage {
   padding: 60px; }
 
 #header, #footer {
@@ -61,10 +61,14 @@ h3 {
 .section:nth-child(5n+5) {
   background-color: #f4d9c1; }
 .section.intro {
-  background-image: url(../imgs/pattern.svg);
   background-size: cover;
-  background-position: center;
-  background-color: #f9b117; }
+  background-position: center; }
+  #quiz .section.intro {
+    background-image: url(../imgs/quiz_pattern.svg);
+    background-color: #a0d887; }
+  #overview .section.intro {
+    background-image: url(../imgs/overview_pattern.svg);
+    background-color: #f9b117; }
 .section.recommend img {
   width: 100%;
   margin-bottom: .5em; }
@@ -83,12 +87,12 @@ h3 {
 .section.hygiene, .section.transmitting, .section.users {
   padding: 0px 100px;
   margin: auto; }
-.section.quiz h2 {
+.section.question h2 {
   text-align: center; }
-.section.quiz p {
+.section.question p {
   margin: auto;
   padding: 10px 0; }
-.section.quiz .slide a {
+.section.question a {
   padding: 5px 10px;
   margin: 0 10px 10px 0;
   background-color: #48a770;

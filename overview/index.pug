@@ -1,0 +1,358 @@
+extends ../layout.pug
+block body
+  #overview.fullpage
+    .intro.section
+      .container
+        .row
+          .col-centered
+            h1
+              | Risk
+              br
+              | Assessment
+    //- .overview.section
+    //-   .container
+    //-     .row
+    //-       .col-sm-6.col-centered
+    //-         h2.text-center Overview
+    //-         p The goal of our trainings is to learn the building blocks of privacy protection and digital security. Our teachings focus on activities patrons do every day at the library so that library staff can develop the capacity to:
+    //-         ul
+    //-           li 
+    //-             strong identify
+    //-             |  how patrons’ data travels to and through library networks;
+    //-           li
+    //-             strong assess
+    //-             |  which privacy and security risks patrons are most likely to encounter at the library; and,
+    //-           li
+    //-             strong respond
+    //-             |  with appropriate steps that help patrons protect themselves against unnecessary data collection or unwanted access and use of data they share online.
+    //-         p
+    //-           | By beginning with common patron experiences, the Data Privacy Project makes learning about privacy protections relevant to the everyday realities of libraries today.
+      //- end container
+    //- end overview section
+    //- .hygiene.section
+    //-   .container
+    //-     .row
+    //-       .col-sm-6.col-centered
+    //-         h2.text-center What is digital hygiene?
+    //-         p When we talk about being safe and secure online and protecting data you care about, we’re referring to digital hygiene. Though we review several steps in our curriculum [link to the pdfs page], here we recommend three basic steps for anyone using a library terminal:
+    .what.section
+      .container
+        .row
+          .col-sm-6.col-centered
+            h2.text-center What is a risk assessment?
+            p As mentioned above, there are some digital privacy basic hygiene practices we recommend. How do we know what else we should be concerned about? How can we develop our own privacy practices as well as give advice to our library users?
+    .patrons.section
+      .container
+        .row
+          .col-sm-12.col-centered
+            .col-sm-6
+              p
+                strong Risks vary from person to person.
+                |  When assessing risk, you should be ready to identify and evaluate the relative impact of someone accessing your information without your consent. For example, you might be a victim of identity theft after someone steals your email passwords and other essential account log-in credentials. Identity theft would be highly impactful to your economic and emotional well-being. You may have to spend years rebuilding your credit, which was damaged when the identity thief borrowed or spent your money in your name. In another example, a former partner may try to harass you by finding out your whereabouts via your social media posts, which can have emotional or personal safety consequences for you. By comparison, the consequences of someone finding out your PIN for your library card may be less damaging. The differences in these situations have implications for what you should do to protect yourself, such as using a password manager and a VPN and untagging yourself from Facebook photos, versus using a more complex password for your library PIN. In short, context matters. People will need privacy "armor" that's appropriate for particular situations.
+            .col-sm-6
+              strong When thinking about patrons, we assess risks based on a few elements:
+              #accordion.panel-group(role='tablist', aria-multiselectable='true')
+                .panel.panel-default
+                  #headingOne.panel-heading(role='tab')
+                    h4.panel-title
+                      a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                        | Who you are.
+                  #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                    .panel-body
+                      | The patron population is diverse and faces different kinds of threats depending on who they are. What level of digital literacy do they possess? Are they a library terminal user or do they use their own computer device on the library’s wireless network?
+                .panel.panel-default
+                  #headingTwo.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                        | What information are you most interested in keeping private.
+                  #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                    .panel-body
+                      | Patrons might be concerned about some things over others--for example, their financial transactions, but not their book borrowing history.
+                .panel.panel-default
+                  #headingThree.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                        | Who is likely to try to access that without your consent.
+                  #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                    .panel-body
+                      | Not everyone feels their data is threatened by the same perpetrator. Some patrons might worry about a parent finding out about certain kinds of information, while others might be concerned about a snooping employer or marketing companies. Whether that person or entity is likely to be successful at accessing that information is another important consideration. Patrons might be concerned about their employer, but the likelihood that the company is actually surveilling its employees could be very low.
+                .panel.panel-default
+                  #headingFour.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
+                        | What are you already doing to protect yourself?
+                  #collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
+                    .panel-body
+                      | Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
+                .panel.panel-default
+                  #headingFive.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
+                        | What are the consequences, and how impactful would the consequences be for you?
+                  #collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
+                    .panel-body
+                      | What you are doing to protect yourself/What we recommend. Some patrons might already be taking steps to protect their privacy. Knowing this is an important step along the way to making recommendations for what more they can do to protect the information they care about from risky people or entities. In general, we want to make recommendations that are most appropriate and considerate of patron’s needs.
+    .meet.section
+      .container
+        .row
+          .col-sm-10.col-centered
+            h2.text-center Let's meet our patrons.
+        .row
+          .col-sm-12.col-centered
+            .col-sm-3
+              img(src='../imgs/luca.svg')
+              p 
+                strong Luca
+                | , a single parent with limited digital literacy skills and limited English skills, relies on the library for access to computers and the Internet.
+            .col-sm-3
+              img(src='../imgs/jo.svg')
+              p 
+                strong Jo
+                | , an artist who regularly comes to the library to do research about strange and sensitive subject matter on both library computers and her own laptop.
+            .col-sm-3
+              img(src='../imgs/sara.svg')
+              p 
+                strong Sara 
+                | is leaving a difficult family situation and uses the library computers and wifi to access social media, look for housing, and read the news.
+            .col-sm-3
+              img(src='../imgs/xav.svg')
+              p
+                strong Xav
+                | , an outspoken, politically minded twenty-something, uses the library computers to search for jobs
+    .luca.patron.section
+      .container
+        .row
+          .col-sm-4
+            img(src='../imgs/luca.svg')
+            h4.text-center Patron 1: Luca
+          .col-sm-8
+            .col-sm-12.bhoechie-tab-container
+              .col-lg-4.col-md-4.col-sm-4.col-xs-4.bhoechie-tab-menu
+                .list-group
+                  a.list-group-item.active.text-center(href='#')
+                    h4 About
+                  a.list-group-item.text-center(href='#')
+                    h4 Risks
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 1
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 2
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 3
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 4
+                  a.list-group-item.text-center(href='#')
+                    h4 Summary
+              .col-lg-8.col-md-8.col-sm-8.col-xs-8.bhoechie-tab
+                .bhoechie-tab-content.active
+                  p Luca, a single parent with limited digital literacy skills and limited English skills, relies on the library for access to computers and the Internet. Today, she’s using the library to renew her unemployment insurance and food stamps, both of which ask her to provide sensitive information.
+                .bhoechie-tab-content
+                  ol
+                    li Cyberthieves could intercept her information and steal her identity, and siphon benefits away from her.
+                    li Getting her identity back and correcting her records would cost thousands of dollars and many, many hours.
+                    li Because Luca is not very familiar with internet technology, she’s doing little to protect herself.
+                .bhoechie-tab-content
+                  p Make sure she’s visiting official unemployment insurance and food stamp websites--as opposed to fake ones--and that these sites are encrypted.
+                .bhoechie-tab-content
+                  p She could also take steps to erase her browser history in order to ensure that no cyberthief could access her data by those means.
+                .bhoechie-tab-content
+                  p Learning how to create strong passwords is essential to her safety.
+                .bhoechie-tab-content
+                  p Finally, we recommend she makes sure to log off of the library computer terminals to ensure no one can access her accounts.
+                .bhoechie-tab-content
+                  p Info to be protected
+                  ul
+                    li Personal information (e.g. Name, DOB, SSN)
+                    li Children’s personal information
+                    li Financial information
+                    li Location Information
+                  p Who is likely to access info against patron’s will?
+                  ul
+                    li Cyberthieves
+                  p What patron is doing/should do to keep their info private?
+                  ul
+                    li Browse via HTTPS
+                    li Clear browser history and cookies
+                    li Log off library terminal
+                    li Create strong passwords
+    .jo.patron.section
+      .container
+        .row
+          .col-sm-4
+            img(src='../imgs/jo.svg')
+            h4.text-center Patron 2: Jo
+          .col-sm-8
+            .col-sm-12.bhoechie-tab-container
+              .col-lg-4.col-md-4.col-sm-4.col-xs-4.bhoechie-tab-menu
+                .list-group
+                  a.list-group-item.active.text-center(href='#')
+                    h4 About
+                  a.list-group-item.text-center(href='#')
+                    h4 Risks
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 1
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 2
+                  a.list-group-item.text-center(href='#')
+                    h4 Summary
+              .col-lg-8.col-md-8.col-sm-8.col-xs-8.bhoechie-tab
+                .bhoechie-tab-content.active
+                  p Jo, an artist who regularly comes to the library to do research about strange and sensitive subject matter on both library computers and her own laptop, is currently researching new forms of biowarfare for an upcoming art project. Jo is combing the library catalog for books and electronic resources available through the library, as well as conducting general web research to find out more information on these topics.
+                .bhoechie-tab-content
+                  ol
+                    li Because Jo’s project deals with topics that have been associated terrorist activity, the most likely entity interested in accessing their library searches and Web search history are law enforcement and national security agents wishing to protect citizens from terrorists.
+                .bhoechie-tab-content
+                  p The likelihood of government officials gaining access is not very high, because Jo is already protecting themself by using Tor, a service that allows users to anonymize http requests.
+                .bhoechie-tab-content
+                  p We also recommend that Jo avoid logging into any websites when conducting research to avoid any companies.
+                .bhoechie-tab-content
+                  p Info to be protected
+                  ul
+                    li Personal information (e.g. Name, DOB, SSN)
+                    li Library usage
+                    li Web search history
+                    li Location Information
+                  p Who is likely to access info against patron’s will?
+                  ul
+                    li Government
+                    li Law enforcement
+                    li Corporations
+                  p What patron is doing/should do to keep their info private?
+                  ul
+                    li Browse via HTTPS
+                    li Clear browser history and cookies
+                    li Install anti-tracking plug-ins on my browser
+                    li Install anti-malware software
+                    li Log off library terminal
+                    li Use Tor
+                    li Don’t log in to my accounts
+                    li Use an account not in my real name
+                    li Create strong passwords
+                    li Visit legitimate sites/avoid fake sites
+                    li Use a VPN
+    .sara.patron.section
+      .container
+        .row
+          .col-sm-4
+            img(src='../imgs/sara.svg')
+            h4.text-center Patron 3: Sara
+          .col-sm-8
+            .col-sm-12.bhoechie-tab-container
+              .col-lg-4.col-md-4.col-sm-4.col-xs-4.bhoechie-tab-menu
+                .list-group
+                  a.list-group-item.active.text-center(href='#')
+                    h4 About
+                  a.list-group-item.text-center(href='#')
+                    h4 Risks
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 1
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 2
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 3
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 4
+                  a.list-group-item.text-center(href='#')
+                    h4 Summary
+              .col-lg-8.col-md-8.col-sm-8.col-xs-8.bhoechie-tab
+                .bhoechie-tab-content.active
+                  p Sara is leaving a difficult family situation and uses the library computers and wifi to access social media, look for housing, and read the news.
+                .bhoechie-tab-content
+                  ol
+                    li Because things got really bad at home, she is worried that a particular family member will try to track her down and intimidate, bully, or physically harm her. The likelihood of this happening is high: for the past year, the family has depended on a family plan with their mobile phone provider. During that time, the whole family enabled phone tracking features. In addition, her family regularly shared passwords, making it possible for different members to post social media accounts in the account holder’s name.
+                .bhoechie-tab-content
+                  p The best recommendation for Sara is to immediately change any account passwords that were formerly shared and set up two-factor authentication on sensitive accounts, such as social media accounts, in order to keep her personal communications to herself.
+                .bhoechie-tab-content
+                  p She is also advised to open a new cell phone account not connected to her family, since call logs and messages are typically available to the account holder.
+                .bhoechie-tab-content
+                  p She should also change location settings so that any device that takes pictures does not store and share location information, such as in posted photos, and could consider making her social media pages private.
+                .bhoechie-tab-content
+                  p As an additional precaution, she could consider using a device lock, to prevent anyone from tampering with her phone.
+                .bhoechie-tab-content
+                  p Info to be protected
+                  ul
+                    li Location Information
+                    li Email messages
+                    li Social media activity
+                  p Who is likely to access info against patron’s will?
+                  ul
+                    li Partner or family member
+                  p What patron is doing/should do to keep their info private?
+                  ul
+                    li Install anti-malware software
+                    li Use 2-factor authentication
+                    li Set up new cell phone account
+                    li Remove location information from posted photos
+                    li Use a device lock
+                    li Make social media settings private
+                    li Create strong passwords
+    .xav.patron.section
+      .container
+        .row
+          .col-sm-4
+            img(src='../imgs/xav.svg')
+            h4.text-center Patron 4: Xav
+          .col-sm-8
+            .col-sm-12.bhoechie-tab-container
+              .col-lg-4.col-md-4.col-sm-4.col-xs-4.bhoechie-tab-menu
+                .list-group
+                  a.list-group-item.active.text-center(href='#')
+                    h4 About
+                  a.list-group-item.text-center(href='#')
+                    h4 Risks
+                  a.list-group-item.text-center(href='#')
+                    h4 Step 1
+                  a.list-group-item.text-center(href='#')
+                    h4 Summary
+              .col-lg-8.col-md-8.col-sm-8.col-xs-8.bhoechie-tab
+                .bhoechie-tab-content.active
+                  p Xav, an outspoken, politically minded twenty-something, uses the library computers to search for jobs. He contributes to many different fora for heated political debates. On Reddit boards, Facebook, and newspaper comments sections, he regularly expresses his opinion in animated way, including in capital letters. Xav also regularly posts personal pictures, such as shots of him partying on the weekend with friends, and has been known to provide status updates about his health.
+                .bhoechie-tab-content
+                  ol
+                    li Unfortunately, Xav’s public and polemical visibility online could be a liability: data analysis tools run by both lenders and potential employers could sift through social networks and other public fora and classify Xav a high risk-individual. This in turn could make it harder for him to get a job, a reasonable rate for a credit card, or obtain a loan. While it’s not easy to tell when he’s been data profiled, the threat of being discriminated against for merely being outspoken is nevertheless a possibility.
+                .bhoechie-tab-content
+                  p It’s recommended that he protect himself from the data profiling by employers and financial institutions by ensuring he is posting anonymously to online fora and changing social media settings to private.
+                .bhoechie-tab-content
+                  p Info to be protected
+                  ul
+                    li Personal information (e.g. Name, DOB, SSN)
+                    li Financial information
+                    li Employment history
+                    li Location information
+                    li Social media activity
+                    li Online posts
+                  p Who is likely to access info against patron’s will?
+                  ul
+                    li Law enforcement
+                    li Corporations
+                    li Employer
+                    li Potential employers
+                    li Banks, lenders, and other financial institutions
+                  p What patron is doing/should do to keep their info private?
+                  ul
+                    li Clear browser history and cookies
+                    li Install anti-tracking plug-ins on my browser
+                    li Install anti-malware software
+                    li Remove location information from posted photos
+                    li Make social media settings private
+                    li Use an account not in my real name
+
+    .recommend.section
+      .container
+        .row
+          .col-sm-12.col-centered
+            .col-sm-4
+              //- img.text-center(src='imgs/password.svg')
+              p
+                strong Always use strong passwords.
+                |  A strong password is something that’s hard to guess by someone who knows you and by a computer. You can use a password manager to both generate and store hard-to-remember passwords for you. You can also test password strength--not your real passwords, but similar kinds of passwords--on password testing sites like this one.
+            .col-sm-4
+              //- img.text-center(src='imgs/secure.svg')
+              p
+                strong Use sites that are secure (e.g., use HTTPS) for personal transactions.
+                |  Websites that are encrypted prevent anyone else but you--the sender making the request to visit a particular website--and the website itself from seeing the data traveling between your computer and the website. Many people come to the library because it is the only place they are able to conduct all sorts of very personal business, such as applying to a job, renewing unemployment insurance, and banking online. Any time you have to submit data you care about and don’t want anyone else but the recipient to see, make sure you see the HTTPS or padlock icon in the browser’s address bar.
+            .col-sm-4
+              //- img.text-center(src='imgs/logout.svg')
+              p
+                strong Log out of a library terminal before walking away.
+                |  When you are still logged into a terminal and walk away from your session, the person who sits down at the computer next may be able to see your web history, any sites that you are still logged into, and any documents you may have stored in the computer’s temporary drive.

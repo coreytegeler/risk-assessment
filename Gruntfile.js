@@ -32,7 +32,8 @@ module.exports = function(grunt) {
 		pug: {
 			compile: {
 				files: {
-					'index.html': 'index.pug'
+					'overview/index.html': 'overview/index.pug',
+					'quiz/index.html': 'quiz/index.pug'
 				},
 				options: {
 					data: {
@@ -43,14 +44,14 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			scripts: {
-				files: ['sass/*.scss', 'coffee/*.coffee', '*.pug'],
+				files: ['sass/*.scss', 'coffee/*.coffee', 'overview/*.pug', 'quiz/*.pug'],
 				tasks: ['sass', 'coffee', 'pug'],
 			}
 		},
 		connect: {
 			server: {
 				options: {
-	        port: 9000
+	        port: 8080
 	      }
 	    }
 	  }
