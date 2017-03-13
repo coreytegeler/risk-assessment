@@ -73,7 +73,7 @@ h3 {
 		background-color: #d0d8ef;
 	}
 	&:nth-child(5n+5) {
-		background-color: #f4d9c1;
+		background-color: #efafaf;
 	}
 	&.intro {
 		background-size: cover;
@@ -142,11 +142,6 @@ h3 {
       }
     }
   }
-	&.recommend {
-		background-image: url(../imgs/pattern.svg);
-		background-size: cover;
-		background-position: center;
-	}
 }
 
 .col-centered{

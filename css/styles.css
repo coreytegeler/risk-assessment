@@ -59,7 +59,7 @@ h3 {
 .section:nth-child(5n+4) {
   background-color: #d0d8ef; }
 .section:nth-child(5n+5) {
-  background-color: #f4d9c1; }
+  background-color: #efafaf; }
 .section.intro {
   background-size: cover;
   background-position: center; }
@@ -104,10 +104,6 @@ h3 {
   width: 50%;
   display: table;
   margin: auto; }
-.section.recommend {
-  background-image: url(../imgs/pattern.svg);
-  background-size: cover;
-  background-position: center; }
 
 .col-centered {
   float: none;
