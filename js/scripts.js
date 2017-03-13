@@ -2,9 +2,9 @@
   $(function() {
     if ($('#overview').length) {
       $('#overview').fullpage({
-        anchors: ['intro', 'quiz', 'what', 'patrons', 'meet', 'luca', 'jo', 'sara', 'xav', 'recommend'],
+        anchors: ['intro', 'quiz', 'what', 'patrons', 'meet', 'luca', 'jo', 'sara', 'xav', 'hygiene', 'recommend'],
         navigation: true,
-        navigationTooltips: ['Intro', 'Quiz', 'What is it?', 'Patrons', 'Meet the Patrons', 'Luca', 'Jo', 'Sara', 'Xav', 'Recommend'],
+        navigationTooltips: ['Intro', 'Quiz', 'What is it?', 'Patrons', 'Meet the Patrons', 'Luca', 'Jo', 'Sara', 'Xav', 'Hygiene', 'Recommend'],
         slidesNavigation: true,
         scrollingSpeed: 1000
       });
