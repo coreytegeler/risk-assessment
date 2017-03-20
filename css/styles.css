@@ -14,13 +14,16 @@ ul li, ol li {
 
 h1 {
   font-size: 6em;
+  line-height: 1.2em;
   text-align: center; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  line-height: 1.2em; }
 
 h3 {
-  font-size: 2em; }
+  font-size: 2em;
+  line-height: 1.2em; }
 
 .fullpage {
   padding: 60px; }
@@ -100,7 +103,7 @@ h3 {
   display: inline-table;
   white-space: nowrap;
   border-radius: 4px; }
-.section.meet .col-sm-3 img {
+.section.examples .col-sm-3 img {
   width: 50%;
   display: table;
   margin: auto; }
