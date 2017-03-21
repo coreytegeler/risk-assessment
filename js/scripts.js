@@ -2,9 +2,9 @@
   $(function() {
     if ($('#overview').length) {
       $('#overview').fullpage({
-        anchors: ['intro', 'patrons', 'examples', 'luca', 'jo', 'sara', 'xav', 'hygiene', 'recommend'],
+        anchors: ['intro', 'risks', 'examples', 'luca', 'jo', 'sara', 'xav', 'hygiene', 'recommend'],
         navigation: true,
-        navigationTooltips: ['Intro', 'Patrons', 'Examples', 'Luca', 'Jo', 'Sara', 'Xav', 'Hygiene', 'Recommend'],
+        navigationTooltips: ['Intro', 'Risks', 'Examples', 'Luca', 'Jo', 'Sara', 'Xav', 'Hygiene', 'Recommend'],
         slidesNavigation: true,
         scrollingSpeed: 1000
       });
@@ -15,6 +15,17 @@
         navigationTooltips: ['Intro', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Conclusion'],
         slidesNavigation: true,
         scrollingSpeed: 1000
+      });
+      $('.question a').click(function(e) {
+        var $parent;
+        $parent = $(this).parents('.specialbox');
+        return $parent.find('a').each(function(i, option) {
+          if ($(option).is('.answer')) {
+            return $(option).addClass('correct');
+          } else {
+            return $(option).addClass('incorrect');
+          }
+        });
       });
     }
     return $('.bhoechie-tab-menu .list-group a').click(function(e) {

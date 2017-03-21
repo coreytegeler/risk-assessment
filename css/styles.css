@@ -71,12 +71,15 @@ h3 {
     background-color: #a0d887; }
   #overview .section.intro {
     background-image: url(../imgs/overview_pattern.svg);
-    background-color: #f7be4b; }
+    background-color: #efc392; }
 .section.recommend img {
   width: 100%;
   margin-bottom: .5em; }
 .section.recommend h3 {
   margin: 0; }
+.section.risks img {
+  width: 100%;
+  margin-bottom: .5em; }
 .section.patron .row {
   display: flex;
   align-items: center; }
@@ -98,18 +101,28 @@ h3 {
 .section.question p {
   margin: auto;
   padding: 10px 0; }
-.section.question a {
+.section.question a, .section.question a:focus {
   padding: 5px 10px;
   margin: 0 10px 10px 0;
-  background-color: #48a770;
-  color: #fff;
+  color: black;
+  border: 2px solid black;
   display: inline-table;
   white-space: nowrap;
-  border-radius: 4px; }
+  border-radius: 4px;
+  text-decoration: none !important; }
+  .section.question a:hover, .section.question a:focus:hover {
+    opacity: 0.5; }
+  .section.question a.correct, .section.question a:focus.correct {
+    border-color: #48a770;
+    background-color: #48a770;
+    color: white;
+    opacity: 1 !important; }
+  .section.question a.incorrect, .section.question a:focus.incorrect {
+    opacity: 0.4; }
 .section.examples .col-sm-3 img {
   width: 50%;
   display: table;
-  margin: 0 auto .5em auto; }
+  margin: 0 auto 1em auto; }
 
 .col-centered {
   float: none;
@@ -191,6 +204,8 @@ h3 {
       border-color: #ddd;
       border-width: 0 0 1px 0;
       border-radius: 0; }
+      .bhoechie-tab-menu .list-group .list-group-item h4 {
+        margin: 0; }
       .bhoechie-tab-menu .list-group .list-group-item.active {
         background-image: none;
         text-shadow: 0px 0px;

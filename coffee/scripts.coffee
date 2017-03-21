@@ -1,9 +1,9 @@
 $ ->
   if $('#overview').length
     $('#overview').fullpage
-      anchors: ['intro', 'patrons', 'examples', 'luca', 'jo', 'sara', 'xav', 'hygiene', 'recommend'],
+      anchors: ['intro', 'risks', 'examples', 'luca', 'jo', 'sara', 'xav', 'hygiene', 'recommend'],
       navigation: true,
-      navigationTooltips: ['Intro', 'Patrons', 'Examples', 'Luca', 'Jo', 'Sara', 'Xav', 'Hygiene', 'Recommend'],
+      navigationTooltips: ['Intro', 'Risks', 'Examples', 'Luca', 'Jo', 'Sara', 'Xav', 'Hygiene', 'Recommend'],
       slidesNavigation: true,
       scrollingSpeed: 1000
   else if $('#quiz').length
@@ -13,6 +13,14 @@ $ ->
       navigationTooltips: ['Intro', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Conclusion'],
       slidesNavigation: true,
       scrollingSpeed: 1000
+
+    $('.question a').click (e) ->
+      $parent = $(this).parents('.specialbox')
+      $parent.find('a').each (i, option) ->
+        if $(option).is('.answer')
+          $(option).addClass('correct')
+        else
+          $(option).addClass('incorrect')
 
   $('.bhoechie-tab-menu .list-group a').click (e) ->
     e.preventDefault()

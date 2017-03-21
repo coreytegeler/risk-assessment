@@ -15,7 +15,7 @@ block body
               strong True or false: 
               | When you use a library terminal, the library knows what sites you have visited.
             p
-              a.multiplechoice(data-toggle='collapse', href='#collapse1') True
+              a.multiplechoice(data-toggle='collapse', href='#collapse1').answer True
               a(data-toggle='collapse', href='#collapse1') False
             #collapse1.collapse
               p
@@ -27,15 +27,15 @@ block body
           .col-sm-8.col-centered.specialbox
             h3 Who is most likely to steal your password and access your accounts?
             p
-              a(data-toggle='collapse', href='#collapse2') Parents
-              a(data-toggle='collapse', href='#collapse2') Spouse
-              a(data-toggle='collapse', href='#collapse2') Sibling
-              a(data-toggle='collapse', href='#collapse2') Classmate
-              a(data-toggle='collapse', href='#collapse2') Thief
-              a(data-toggle='collapse', href='#collapse2') Another patron
+              a(data-toggle='collapse', href='#collapse2').answer Parents
+              a(data-toggle='collapse', href='#collapse2').answer Spouse
+              a(data-toggle='collapse', href='#collapse2').answer Sibling
+              a(data-toggle='collapse', href='#collapse2').answer Classmate
+              a(data-toggle='collapse', href='#collapse2').answer Thief
+              a(data-toggle='collapse', href='#collapse2').answer Another patron
             #collapse2.collapse
               p
-                | Any of the above people may try to obtain or guess your password without your consent. A strong password should be hard to guess by someone who knows you (so, it shouldn’t include easily known information like your name or address or pet’s name).nd, it should be hard to guess by computer programs that digital thieves might use (password should be as long as possible and include an assortment of capital letters, symbols and numbers).
+                | Any of the above people may try to obtain or guess your password without your consent. A strong password should be hard to guess by someone who knows you (so, it shouldn’t include easily known information like your name or address or pet’s name), it should be hard to guess by computer programs that digital thieves might use (password should be as long as possible and include an assortment of capital letters, symbols and numbers).
     .section.question.q3
       .container
         .row
@@ -45,7 +45,7 @@ block body
               | During a web browsing session in private or incognito mode, cookies cannot communicate information about your browsing behavior to third parties.
             p
               a(data-toggle='collapse', href='#collapse3') True
-              a(data-toggle='collapse', href='#collapse3') False
+              a(data-toggle='collapse', href='#collapse3').answer False
             #collapse3.collapse
               p
                 strong False.
@@ -59,7 +59,7 @@ block body
               | Using a public library’s open wi-fi means your online behavior is anonymous.
             p
               a(data-toggle='collapse', href='#collapse4') True
-              a(data-toggle='collapse', href='#collapse4') False
+              a(data-toggle='collapse', href='#collapse4').answer False
             #collapse4.collapse
               p
                 strong False.
@@ -73,7 +73,7 @@ block body
               | When a website has a privacy policy, it means the site will not share my information with other websites and companies without my permission.
             p
               a(data-toggle='collapse', href='#collapse5') True
-              a(data-toggle='collapse', href='#collapse5') False
+              a(data-toggle='collapse', href='#collapse5').answer False
             #collapse5.collapse
               p
                 strong False.
@@ -87,7 +87,7 @@ block body
               | Most websites are encrypted.
             p
               a(data-toggle='collapse', href='#collapse6') True
-              a(data-toggle='collapse', href='#collapse6') False
+              a(data-toggle='collapse', href='#collapse6').answer False
             #collapse6.collapse
               p
                 strong False.
@@ -101,7 +101,7 @@ block body
               | It is safe to use the same password for multiple user accounts, as long as it contains a few different letters, numbers, or symbols.
             p
               a(data-toggle='collapse', href='#collapse7') True
-              a(data-toggle='collapse', href='#collapse7') False
+              a(data-toggle='collapse', href='#collapse7').answer False
             #collapse7.collapse
               p
                 strong False.

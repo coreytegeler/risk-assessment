@@ -12,14 +12,18 @@ block body
         .row
           .col-sm-8.col-centered
             h3.text-center Let’s learn about basic questions we can ask to figure out patrons’ privacy needs.
-    .patrons.section
+    .risks.section
       .container
         .row
           .col-sm-12.col-centered
             .col-sm-6
-              p Risks vary from person to person. For example, a Visa card data breach impacts anyone who uses these cards, but a person who does not have a credit card will not need to worry about this. Patrons that use social media need to consider their privacy settings on those sites, as well as the terms of service of those companies. Journalists may need to protect who they contact, in addition to the content of their conversations. Depending on your risk, you’ll need different privacy "armor" that's appropriate for your particular situation.
+              img(src='../imgs/shields.svg')
+              p
+                strong Risks vary from person to person. 
+                | For example, a Visa card data breach impacts anyone who uses these cards, but a person who does not have a credit card will not need to worry about this. Patrons that use social media need to consider their privacy settings on those sites, as well as the terms of service of those companies. Journalists may need to protect who they contact, in addition to the content of their conversations. Depending on your risk, you’ll need different privacy "armor" that's appropriate for your particular situation.
+              p
+                strong To help figure out patrons’ risks and needs, we recommend asking the following questions:
             .col-sm-6
-              strong To help figure out patrons’ risks and needs, we recommend asking the following questions:
               #accordion.panel-group(role='tablist', aria-multiselectable='true')
                 .panel.panel-default
                   #headingOne.panel-heading(role='tab')
@@ -315,25 +319,25 @@ block body
         .row
           .col-sm-9.col-centered
             h2.text-center A word about digital hygiene.
-            p When we talk about being safe and secure online and protecting data you care about, we’re referring to digital hygiene. Though we review several steps in our 
+            h3 When we talk about being safe and secure online and protecting data you care about, we’re referring to digital hygiene. Though we review several steps in our 
               a(href='http://www.dataprivacyproject.org/curriculum/') curriculum
-              | , here we recommend three basic steps for anyone using a library terminal:
+              | , below we recommend three basic steps for anyone using a library terminal:
     .recommend.section.outro
       .container
         .row
           .col-sm-12.col-centered
             .col-sm-4
-              //- img.text-center(src='imgs/password.svg')
+              img.text-center(src='../imgs/password.svg')
               p
                 strong Always use strong passwords.
                 |  A strong password is something that’s hard to guess by someone who knows you and by a computer. You can use a password manager to both generate and store hard-to-remember passwords for you. You can also test password strength--not your real passwords, but similar kinds of passwords--on password testing sites like this one.
             .col-sm-4
-              //- img.text-center(src='imgs/secure.svg')
+              img.text-center(src='../imgs/secure.svg')
               p
                 strong Use sites that are secure (e.g., use HTTPS) for personal transactions.
                 |  Websites that are encrypted prevent anyone else but you--the sender making the request to visit a particular website--and the website itself from seeing the data traveling between your computer and the website. Many people come to the library because it is the only place they are able to conduct all sorts of very personal business, such as applying to a job, renewing unemployment insurance, and banking online. Any time you have to submit data you care about and don’t want anyone else but the recipient to see, make sure you see the HTTPS or padlock icon in the browser’s address bar.
             .col-sm-4
-              //- img.text-center(src='imgs/logout.svg')
+              img.text-center(src='../imgs/logout.svg')
               p
                 strong Log out of a library terminal before walking away.
                 |  When you are still logged into a terminal and walk away from your session, the person who sits down at the computer next may be able to see your web history, any sites that you are still logged into, and any documents you may have stored in the computer’s temporary drive.

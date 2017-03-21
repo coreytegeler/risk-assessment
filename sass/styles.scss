@@ -87,7 +87,7 @@ h3 {
     }
     #overview & {
       background-image: url(../imgs/overview_pattern.svg);
-      background-color: #f7be4b;
+      background-color: #efc392;
     }
 	}
 	&.recommend {
@@ -99,6 +99,12 @@ h3 {
 			margin: 0;
 		}
 	}
+  &.risks {
+    img {
+      width: 100%;
+      margin-bottom: .5em;
+    }
+  }
 	&.patron {
 		.row {
 			display: flex;
@@ -130,14 +136,27 @@ h3 {
 			margin: auto;
 			padding: 10px 0;
 		}
-		a {
+		a, a:focus {
 			padding: 5px 10px;
 			margin: 0 10px 10px 0;
-			background-color: #48a770;
-			color: #fff;
+			color: black;
+      border: 2px solid black;
 			display: inline-table;
 	    white-space: nowrap;
 	    border-radius: 4px;
+      text-decoration: none !important;
+      &:hover {
+        opacity: 0.5;
+      }
+      &.correct {
+        border-color: #48a770;
+        background-color: #48a770;
+        color: white;
+        opacity: 1 !important;
+      }
+      &.incorrect {
+        opacity: 0.4;
+      }
 		}
 	}
   &.examples {
@@ -145,7 +164,7 @@ h3 {
       img {
         width: 50%;
         display: table;
-        margin: 0 auto .5em auto;
+        margin: 0 auto 1em auto;
       }
     }
   }
@@ -248,6 +267,9 @@ h3 {
 		  border-color: #ddd;
 		  border-width: 0 0 1px 0;
 		  border-radius: 0;
+      h4 {
+        margin: 0; 
+      }
 			&.active {
 				background-image: none;
 			  text-shadow: 0px 0px;
