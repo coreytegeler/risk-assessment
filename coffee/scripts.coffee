@@ -15,12 +15,18 @@ $ ->
       scrollingSpeed: 1000
 
     $('.question a').click (e) ->
-      $parent = $(this).parents('.specialbox')
-      $parent.find('a').each (i, option) ->
+      $question = $(this).parents('.question')
+      i = $question.data('i')
+      q = $question.data('q')
+      a = $(this).data('a')
+      correct = $(this).is('.answer')
+      $question.find('a').each (i, option) ->
         if $(option).is('.answer')
           $(option).addClass('correct')
         else
           $(option).addClass('incorrect')
+      ga('send', 'event', 'quiz', a, q)
+
 
   $('.bhoechie-tab-menu .list-group a').click (e) ->
     e.preventDefault()

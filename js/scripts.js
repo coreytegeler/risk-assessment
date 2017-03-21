@@ -17,15 +17,20 @@
         scrollingSpeed: 1000
       });
       $('.question a').click(function(e) {
-        var $parent;
-        $parent = $(this).parents('.specialbox');
-        return $parent.find('a').each(function(i, option) {
+        var $question, a, correct, i, q;
+        $question = $(this).parents('.question');
+        i = $question.data('i');
+        q = $question.data('q');
+        a = $(this).data('a');
+        correct = $(this).is('.answer');
+        $question.find('a').each(function(i, option) {
           if ($(option).is('.answer')) {
             return $(option).addClass('correct');
           } else {
             return $(option).addClass('incorrect');
           }
         });
+        return ga('send', 'event', 'quiz', a, q);
       });
     }
     return $('.bhoechie-tab-menu .list-group a').click(function(e) {
