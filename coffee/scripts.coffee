@@ -16,16 +16,20 @@ $ ->
 
     $('.question a').click (e) ->
       $question = $(this).parents('.question')
-      i = $question.data('i')
-      q = $question.data('q')
-      a = $(this).data('a')
-      correct = $(this).is('.answer')
-      $question.find('a').each (i, option) ->
-        if $(option).is('.answer')
-          $(option).addClass('correct')
-        else
-          $(option).addClass('incorrect')
-      ga('send', 'event', 'quiz', a, q)
+      if !$question.is('.submitted')
+        q = $question.data('q')
+        a = $(this).data('a')
+        correct = $(this).is('.answer')
+        $question.find('a').each (i, option) ->
+          if $(option).is('.answer')
+            $(option).addClass('correct')
+          else
+            $(option).addClass('incorrect')
+          setTimeout () ->
+            $(option).attr('href', '')
+        ga('send', 'event', 'quiz', a, q)
+        $question.addClass('submitted')
+
 
 
   $('.bhoechie-tab-menu .list-group a').click (e) ->
