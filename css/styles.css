@@ -19,11 +19,11 @@ h1 {
 
 h2 {
   font-size: 3em;
-  line-height: 1.2em; }
+  line-height: 1.3em; }
 
 h3 {
   font-size: 2em;
-  line-height: 1.2em; }
+  line-height: 1.4em; }
 
 .fullpage {
   padding: 60px; }
@@ -62,7 +62,7 @@ h3 {
 .section:nth-child(5n+4) {
   background-color: #d0d8ef; }
 .section:nth-child(5n+5) {
-  background-color: #efafaf; }
+  background-color: #eac1c1; }
 .section.intro {
   background-size: cover;
   background-position: center; }
@@ -71,7 +71,7 @@ h3 {
     background-color: #a0d887; }
   #overview .section.intro {
     background-image: url(../imgs/overview_pattern.svg);
-    background-color: #f9b117; }
+    background-color: #f7be4b; }
 .section.recommend img {
   width: 100%;
   margin-bottom: .5em; }
@@ -85,8 +85,11 @@ h3 {
   max-width: 20em;
   display: table;
   margin: auto; }
-.section.patron h3 {
-  text-align: center; }
+.section.patron h2, .section.patron h3 {
+  margin: 0; }
+.section.patron h4 {
+  margin: .75em 0 0 0;
+  opacity: 0.6; }
 .section.hygiene, .section.transmitting, .section.users {
   padding: 0px 100px;
   margin: auto; }
@@ -106,7 +109,7 @@ h3 {
 .section.examples .col-sm-3 img {
   width: 50%;
   display: table;
-  margin: auto; }
+  margin: 0 auto .5em auto; }
 
 .col-centered {
   float: none;

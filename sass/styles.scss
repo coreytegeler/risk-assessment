@@ -23,11 +23,11 @@ h1 {
 }
 h2 {
 	font-size: 3em;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 h3 {
 	font-size: 2em;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 .fullpage {
 	padding: 60px;
@@ -76,7 +76,7 @@ h3 {
 		background-color: #d0d8ef;
 	}
 	&:nth-child(5n+5) {
-		background-color: #efafaf;
+		background-color: #eac1c1;
 	}
 	&.intro {
 		background-size: cover;
@@ -87,7 +87,7 @@ h3 {
     }
     #overview & {
       background-image: url(../imgs/overview_pattern.svg);
-      background-color: #f9b117;
+      background-color: #f7be4b;
     }
 	}
 	&.recommend {
@@ -110,9 +110,13 @@ h3 {
 			display: table;
 			margin: auto; 
 		}
-		h3 {
-			text-align: center;
+		h2, h3 {
+			margin: 0;
 		}
+    h4 {
+      margin: .75em 0 0 0;
+      opacity: 0.6;
+    }
 	}
 	&.hygiene, &.transmitting, &.users {
 		padding: 0px 100px;
@@ -141,7 +145,7 @@ h3 {
       img {
         width: 50%;
         display: table;
-        margin: auto;
+        margin: 0 auto .5em auto;
       }
     }
   }
